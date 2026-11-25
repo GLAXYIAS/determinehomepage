@@ -10,6 +10,52 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .prototype-link {
+      display: grid;
+      gap: 10px;
+      margin-top: clamp(34px, 5vw, 50px);
+      padding: clamp(22px, 3vw, 30px);
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(255, 138, 0, 0.09), transparent 62%);
+      text-decoration: none;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .prototype-link:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .prototype-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .prototype-link__meta {
+      font: 500 9px/1 var(--mono);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .prototype-link__title {
+      font: 800 clamp(24px, 3vw, 38px) / 1.1 var(--sans);
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    .prototype-link__title span {
+      color: var(--accent);
+    }
+
+    .prototype-link__desc {
+      max-width: 62ch;
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -25,7 +71,7 @@
     <section class="hero wrap">
       <p class="eyebrow">01 — The question</p>
       <h1>Pick the next<br><em>homepage<span class="period">.</span></em></h1>
-      <p class="lede">We designed a new front door for the arcade — a featured drop, a hand-picked shelf, and the full library in one place. Before it replaces anything, <strong>you decide what happens to it.</strong></p>
+      <p class="lede">We made a new homepage for the arcade — a featured game, a hand-picked shelf, and Games and Saved that open the full library. Before it replaces anything, <strong>you decide what happens to it.</strong></p>
       <div class="hero-stats">
         <div class="hero-stat">
           <span class="stat-label">Votes in</span>
@@ -44,46 +90,16 @@
 
     <section class="preview wrap" aria-labelledby="preview-title">
       <div class="section-head">
-        <p class="eyebrow">02 — The proposal</p>
-        <h2 id="preview-title">The new homepage,<br><em>in full.</em></h2>
-        <p class="section-note">Desktop and mobile. Click any screenshot to open it full size.</p>
+        <p class="eyebrow">02 — The prototype</p>
+        <h2 id="preview-title">The new homepage,<br><em>live.</em></h2>
+        <p class="section-note">No mockups this time. The prototype is up — click around it, then come back and vote.</p>
       </div>
 
-      <div class="shots">
-        <figure class="shot">
-          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/desktop-hero.jpg" target="_blank" rel="noreferrer">
-            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/desktop-hero.jpg" width="1440" height="900" alt="The proposed desktop homepage: a dark arcade dashboard with a large “Play something before the bell” headline, featured game buttons, and a game grid.">
-          </a>
-          <figcaption><span>01</span> Desktop — hero &amp; featured</figcaption>
-        </figure>
-        <figure class="shot">
-          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/desktop-shelf.jpg" target="_blank" rel="noreferrer">
-            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/desktop-shelf.jpg" width="1440" height="900" loading="lazy" alt="The proposed desktop homepage scrolled to the game grid, with numbered covers, titles, and genre labels.">
-          </a>
-          <figcaption><span>02</span> Desktop — the shelf</figcaption>
-        </figure>
-      </div>
-
-      <div class="mobile-strip">
-        <figure class="shot">
-          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-hero.jpg" target="_blank" rel="noreferrer">
-            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-hero.jpg" width="864" height="1336" loading="lazy" alt="The proposed homepage on a phone: large serif-accented headline and compact search header.">
-          </a>
-          <figcaption><span>03</span> Mobile — hero</figcaption>
-        </figure>
-        <figure class="shot">
-          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-deck.jpg" target="_blank" rel="noreferrer">
-            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-deck.jpg" width="864" height="1336" loading="lazy" alt="The proposed homepage on a phone showing the “Six that hold up” hand-picked game list.">
-          </a>
-          <figcaption><span>04</span> Mobile — start here</figcaption>
-        </figure>
-        <figure class="shot">
-          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-library.jpg" target="_blank" rel="noreferrer">
-            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-library.jpg" width="864" height="1336" loading="lazy" alt="The proposed homepage on a phone showing the full library grid with genre filters.">
-          </a>
-          <figcaption><span>05</span> Mobile — the whole shelf</figcaption>
-        </figure>
-      </div>
+      <a class="prototype-link" href="https://glaxyias.github.io/brand-new-start-up-screen/" target="_blank" rel="noreferrer">
+        <span class="prototype-link__meta">Null X — Startup · live prototype</span>
+        <span class="prototype-link__title">Open the new homepage <span aria-hidden="true">↗</span></span>
+        <span class="prototype-link__desc">The actual page, not a screenshot. Games and Saved open the full library now — go try it.</span>
+      </a>
 
       <div class="features">
         <div class="feature">
@@ -99,7 +115,7 @@
         <div class="feature">
           <span class="feature-num">03</span>
           <h3>The whole library</h3>
-          <p>Search, sort, and genre filters are part of the page, not buried.</p>
+          <p>Games and Saved open the full shelf instead of a section halfway down.</p>
         </div>
         <div class="feature">
           <span class="feature-num">04</span>
@@ -123,7 +139,7 @@
             <span class="option-tag">The proposal</span>
           </span>
           <span class="option-title">Ship the new homepage</span>
-          <span class="option-desc">Replace the current front page with the new design: featured drop, hand-picked shelf, and the full library.</span>
+          <span class="option-desc">Replace the old front page with this one: featured game, hand-picked shelf, and the full library when you click Games.</span>
           <span class="option-action">Vote for A <span aria-hidden="true">→</span></span>
         </button>
 
@@ -133,7 +149,7 @@
             <span class="option-tag">Keep it</span>
           </span>
           <span class="option-title">Keep the current homepage</span>
-          <span class="option-desc">Leave the live site exactly as it is and shelve the redesign.</span>
+          <span class="option-desc">Leave the live site how it is and shelve the redesign.</span>
           <span class="option-action">Vote for B <span aria-hidden="true">→</span></span>
         </button>
 
@@ -143,7 +159,7 @@
             <span class="option-tag">Both</span>
           </span>
           <span class="option-title">Add it, but make it optional</span>
-          <span class="option-desc">Ship the new page alongside the current one and let every visitor choose their layout.</span>
+          <span class="option-desc">Put both on the site and let people pick their layout.</span>
           <span class="option-action">Vote for C <span aria-hidden="true">→</span></span>
         </button>
       </div>
