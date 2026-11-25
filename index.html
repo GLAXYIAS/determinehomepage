@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Determine the homepage — NULL X</title>
+  <meta name="description" content="Vote on the next NULL X homepage: ship the new design, keep the current page, or add it as an optional layout.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a09'/%3E%3Cpath d='M14 14h12l6 10 6-10h12L37 32l13 18H38l-6-10-6 10H14l13-18z' fill='%23ff8a00'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://glaxyias.github.io/" aria-label="NULL X — current site">
+      <span class="brand-mark" aria-hidden="true">X</span>
+      <span class="brand-name">NULL <em>X</em></span>
+    </a>
+    <p class="topbar-meta"><span class="dot" aria-hidden="true"></span> Homepage referendum · open</p>
+    <a class="site-link" href="https://glaxyias.github.io/" target="_blank" rel="noreferrer">Current site ↗</a>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">01 — The question</p>
+      <h1>Pick the next<br><em>homepage<span class="period">.</span></em></h1>
+      <p class="lede">We designed a new front door for the arcade — a featured drop, a hand-picked shelf, and the full library in one place. Before it replaces anything, <strong>you decide what happens to it.</strong></p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-label">Votes in</span>
+          <strong id="heroTotal">—</strong>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-label">Options</span>
+          <strong>03</strong>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-label">Votes per browser</span>
+          <strong>01</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview wrap" aria-labelledby="preview-title">
+      <div class="section-head">
+        <p class="eyebrow">02 — The proposal</p>
+        <h2 id="preview-title">The new homepage,<br><em>in full.</em></h2>
+        <p class="section-note">Desktop and mobile. Click any screenshot to open it full size.</p>
+      </div>
+
+      <div class="shots">
+        <figure class="shot">
+          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/desktop-hero.jpg" target="_blank" rel="noreferrer">
+            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/desktop-hero.jpg" width="1440" height="900" alt="The proposed desktop homepage: a dark arcade dashboard with a large “Play something before the bell” headline, featured game buttons, and a game grid.">
+          </a>
+          <figcaption><span>01</span> Desktop — hero &amp; featured</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/desktop-shelf.jpg" target="_blank" rel="noreferrer">
+            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/desktop-shelf.jpg" width="1440" height="900" loading="lazy" alt="The proposed desktop homepage scrolled to the game grid, with numbered covers, titles, and genre labels.">
+          </a>
+          <figcaption><span>02</span> Desktop — the shelf</figcaption>
+        </figure>
+      </div>
+
+      <div class="mobile-strip">
+        <figure class="shot">
+          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-hero.jpg" target="_blank" rel="noreferrer">
+            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-hero.jpg" width="864" height="1336" loading="lazy" alt="The proposed homepage on a phone: large serif-accented headline and compact search header.">
+          </a>
+          <figcaption><span>03</span> Mobile — hero</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-deck.jpg" target="_blank" rel="noreferrer">
+            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-deck.jpg" width="864" height="1336" loading="lazy" alt="The proposed homepage on a phone showing the “Six that hold up” hand-picked game list.">
+          </a>
+          <figcaption><span>04</span> Mobile — start here</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-library.jpg" target="_blank" rel="noreferrer">
+            <img src="https://klcvmaxehmezozckumuq.supabase.co/storage/v1/object/public/homepage-previews/mobile-library.jpg" width="864" height="1336" loading="lazy" alt="The proposed homepage on a phone showing the full library grid with genre filters.">
+          </a>
+          <figcaption><span>05</span> Mobile — the whole shelf</figcaption>
+        </figure>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <span class="feature-num">01</span>
+          <h3>Featured drop</h3>
+          <p>One game gets the big slot, refreshed instead of a static banner.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-num">02</span>
+          <h3>Six that hold up</h3>
+          <p>A hand-picked shelf for when you don't know what to play.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-num">03</span>
+          <h3>The whole library</h3>
+          <p>Search, sort, and genre filters are part of the page, not buried.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-num">04</span>
+          <h3>Made for phones</h3>
+          <p>The same layout collapses into a clean two-column mobile shelf.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vote wrap" id="vote" aria-labelledby="vote-title">
+      <div class="section-head">
+        <p class="eyebrow">03 — The vote</p>
+        <h2 id="vote-title">Three ways<br><em>this can go.</em></h2>
+        <p class="section-note">Pick the outcome you actually want. One vote per browser — change it whenever.</p>
+      </div>
+
+      <div class="options" role="radiogroup" aria-label="Homepage options">
+        <button class="option" type="button" data-choice="new_homepage" data-letter="A" role="radio" aria-checked="false">
+          <span class="option-top">
+            <span class="option-letter">A</span>
+            <span class="option-tag">The proposal</span>
+          </span>
+          <span class="option-title">Ship the new homepage</span>
+          <span class="option-desc">Replace the current front page with the new design: featured drop, hand-picked shelf, and the full library.</span>
+          <span class="option-action">Vote for A <span aria-hidden="true">→</span></span>
+        </button>
+
+        <button class="option" type="button" data-choice="keep_current" data-letter="B" role="radio" aria-checked="false">
+          <span class="option-top">
+            <span class="option-letter">B</span>
+            <span class="option-tag">Keep it</span>
+          </span>
+          <span class="option-title">Keep the current homepage</span>
+          <span class="option-desc">Leave the live site exactly as it is and shelve the redesign.</span>
+          <span class="option-action">Vote for B <span aria-hidden="true">→</span></span>
+        </button>
+
+        <button class="option" type="button" data-choice="optional_toggle" data-letter="C" role="radio" aria-checked="false">
+          <span class="option-top">
+            <span class="option-letter">C</span>
+            <span class="option-tag">Both</span>
+          </span>
+          <span class="option-title">Add it, but make it optional</span>
+          <span class="option-desc">Ship the new page alongside the current one and let every visitor choose their layout.</span>
+          <span class="option-action">Vote for C <span aria-hidden="true">→</span></span>
+        </button>
+      </div>
+
+      <p class="vote-status" id="voteStatus" role="status">Pick one option. You can change your vote later.</p>
+
+      <div class="results" aria-labelledby="results-title">
+        <div class="results-head">
+          <h3 id="results-title">Live results</h3>
+          <p><strong id="totalVotes">—</strong> <span id="resultsNote">votes so far</span></p>
+        </div>
+
+        <div class="result" data-result="new_homepage">
+          <div class="result-line">
+            <span class="result-name"><span class="result-letter">A</span> Ship the new homepage</span>
+            <span class="result-figure"><strong data-count>—</strong> <span data-pct>0%</span></span>
+          </div>
+          <div class="bar"><span class="bar-fill" data-bar></span></div>
+        </div>
+
+        <div class="result" data-result="keep_current">
+          <div class="result-line">
+            <span class="result-name"><span class="result-letter">B</span> Keep the current homepage</span>
+            <span class="result-figure"><strong data-count>—</strong> <span data-pct>0%</span></span>
+          </div>
+          <div class="bar"><span class="bar-fill" data-bar></span></div>
+        </div>
+
+        <div class="result" data-result="optional_toggle">
+          <div class="result-line">
+            <span class="result-name"><span class="result-letter">C</span> Add it, but make it optional</span>
+            <span class="result-figure"><strong data-count>—</strong> <span data-pct>0%</span></span>
+          </div>
+          <div class="bar"><span class="bar-fill" data-bar></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>NULL X — homepage referendum</p>
+    <p class="footer-links">
+      <a href="https://glaxyias.github.io/" target="_blank" rel="noreferrer">Current site ↗</a>
+      <a href="https://github.com/GLAXYIAS/determinehomepage" target="_blank" rel="noreferrer">Source ↗</a>
+    </p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
